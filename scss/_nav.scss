@@ -1,0 +1,21 @@
+.nav{
+    justify-content: center;
+    color:$colorFuente;
+    background-color: $ColorPrincipal;
+    position: sticky;
+    top: 0%;
+}
+
+.nav-item{
+    height: 50px;
+}
+
+.logo{
+    position: absolute;
+    left: 0%;
+}
+
+.active{
+    background-color:$ColorSecundario;
+    color:$ColorFuente;
+}
