@@ -1,0 +1,33 @@
+.footerContainer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-items: center;
+    background-color: $ColorPrincipal;
+}
+
+.footerContainer ul {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerContainer li {
+    padding: 10px;
+}
+
+.logoFooter a img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+
+.logoFooter {
+    text-align: center;
+}
