@@ -11,27 +11,29 @@
   src: url(../font/Raleway-Light.ttf); }
 
 .nav {
-  justify-content: center;
-  color: #5E666F;
   background-color: #F4DAD4;
-  position: sticky;
-  top: 0%; }
+  color: #5E666F; }
 
-.nav-item {
-  height: 50px; }
-
-.logo {
-  position: absolute;
-  left: 0%; }
+.nav-link {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px; }
 
 .active {
   background-color: #A585C9;
-  color: #5E666F; }
+  color: #5E666F;
+  border-radius: 5px; }
+
+.logoNav img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  min-width: 90px; }
 
 .footerContainer {
   width: 100vw;
   position: absolute;
-  bottom: 0;
+  bottom: 100;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
@@ -52,7 +54,8 @@
 .logoFooter a img {
   width: 100%;
   height: auto;
-  max-width: 150px; }
+  max-width: 120px;
+  min-width: 90px; }
 
 .logoFooter {
   text-align: center; }
@@ -80,4 +83,13 @@ body {
 
 main {
   width: 100%;
-  height: 70vh; }
+  height: 100vh; }
+
+.btnWhatsApp {
+  position: fixed;
+  bottom: 15vh;
+  right: 8px;
+  z-index: 100; }
+
+.btnWhatsApp a img {
+  max-width: 85px; }

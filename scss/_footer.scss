@@ -1,7 +1,7 @@
 .footerContainer {
     width: 100vw;
     position: absolute;
-    bottom: 0;
+    bottom: 100;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
@@ -25,7 +25,8 @@
 .logoFooter a img {
     width: 100%;
     height: auto;
-    max-width: 150px;
+    max-width: 120px;
+    min-width: 90px;
 }
 
 .logoFooter {

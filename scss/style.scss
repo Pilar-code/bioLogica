@@ -26,5 +26,16 @@ body {
 //Provisorio
 main {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
+}
+
+.btnWhatsApp {
+    position: fixed;
+    bottom: 15vh;
+    right: 8px;
+    z-index: 100;
+}
+
+.btnWhatsApp a img {
+    max-width: 85px;
 }
