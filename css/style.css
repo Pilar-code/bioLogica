@@ -11,21 +11,54 @@
   src: url(../font/Raleway-Light.ttf); }
 
 .nav {
-  justify-content: center;
   background-color: #F4DAD4;
-  position: sticky;
-  top: 0%; }
+  color: #5E666F; }
 
-.nav-item{
-    height: 50px; }
-
-.logo{
-    position:absolute;
-    left: 0%; }
+.nav-link {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px; }
 
 .active {
-  background-color: #A585C9 !important;
-  color: #5E666F !important; }
+  background-color: #A585C9;
+  color: #5E666F;
+  border-radius: 5px; }
+
+.logoNav img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  min-width: 90px; }
+
+.footerContainer {
+  width: 100vw;
+  position: absolute;
+  bottom: 100;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+  background-color: #F4DAD4; }
+
+.footerContainer ul {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.footerContainer li {
+  padding: 10px; }
+
+.logoFooter a img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  min-width: 90px; }
+
+.logoFooter {
+  text-align: center; }
 
 * {
   margin: 0;
@@ -44,5 +77,19 @@ html {
 
 body {
   font-size: 100%;
-  font-family: ralewayLight;
-  color: #5E666F; }
+  font-family: ralewayMedium;
+  color: #5E666F;
+  line-height: 1.4em; }
+
+main {
+  width: 100%;
+  height: 100vh; }
+
+.btnWhatsApp {
+  position: fixed;
+  bottom: 15vh;
+  right: 8px;
+  z-index: 100; }
+
+.btnWhatsApp a img {
+  max-width: 85px; }
