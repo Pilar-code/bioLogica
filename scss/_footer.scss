@@ -1,12 +1,12 @@
 .footerContainer {
     width: 100vw;
     position: absolute;
-    bottom: 100;
+    bottom: 0%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     justify-items: center;
-    background-color: $ColorPrincipal;
+    background-color: #faf3f1;
 }
 
 .footerContainer ul {
@@ -19,7 +19,10 @@
 }
 
 .footerContainer li {
-    padding: 10px;
+    margin: 2px;
+    background-color: #838991;
+    border-radius: 30%;
+    padding: 6px;
 }
 
 .logoFooter a img {
@@ -32,3 +35,4 @@
 .logoFooter {
     text-align: center;
 }
+  
