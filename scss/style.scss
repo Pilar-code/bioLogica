@@ -49,7 +49,7 @@ html {
 //Provisorio
 main {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: relative;
     background-image: linear-gradient( #F4DAD4 35%, white); 
 }
@@ -64,3 +64,9 @@ main {
 .btnWhatsApp a img {
     max-width: 85px;
 }
+
+.cardsFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }

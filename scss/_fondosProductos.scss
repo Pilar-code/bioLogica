@@ -1,0 +1,26 @@
+@mixin fondoCards($color) {
+    margin-left: 20px;
+    background-color:$color;
+    max-width: 180px;
+    max-height: 100%;
+    img{
+        max-width: 220px;
+        max-height: 220px;
+    }
+}
+
+.fondoEscenciales{
+    @include fondoCards(#b294d4);
+}
+.fondoHidrolatos{
+    @include fondoCards(#f3dfdb);
+}
+.fondoVegetales{
+    @include fondoCards(#bbbfc4);
+}
+.fondoVarios{
+    @include fondoCards(#9ab3d3);
+}
+.fondoSinteticos{
+    @include fondoCards(#f0d3b2);
+}

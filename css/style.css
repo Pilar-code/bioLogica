@@ -86,7 +86,7 @@ body {
 
 main {
   width: 100%;
-  height: 100%;
+  height:80vh;
   max-width: 100%;
   max-height: 100%;}
 
@@ -110,41 +110,36 @@ main {
   font-size: 40px;
   font-weight: 600;
   width: 100%;
-  max-width: 220px;}
+  max-width: 220px; }
 
 .presentacionPagina p{
   font-size: 16px;
   width: 100%;
   max-width: 420px;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .presentacionPagina button {
   width:115px;
   height: 30px;
   border-radius: 10px;
-  background-color: #A585C9;
-}
+  background-color: #A585C9; }
 
 .presentacionPagina button a {
   text-decoration: none;
   color:#5E666F;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
 .presentacionPagina button:hover {
   width:115px;
   height: 30px;
   border-radius: 10px;
-  background-color: #9b81b9;
-}
+  background-color: #9b81b9; }
 
 .presentacionPagina button a :hover{
   text-decoration: none;
   color:#5E666F;
   font-size: 15px;
-  color: #997bbb;
-}
+  color: #997bbb; }
 
 .circuloFondo{
   z-index: 0;
@@ -154,16 +149,14 @@ main {
   background-color: #e4c9c3c9;
   width: 600px;
   height: 600px;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .circuloFondo img {
   max-width: 100%;
   max-height: 100%;
   position: absolute;
   top: 20%;
-  right: 50%;
-}
+  right: 50%; }
 
 @media only screen and (max-width: 910px) {
   .circuloFondo{
@@ -174,9 +167,7 @@ main {
     background-color: #e4c9c3c9;
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-  }
-}
+    border-radius: 50%; } }
 @media only screen and (max-width: 700px){
   .circuloFondo{
     z-index: 0;
@@ -186,9 +177,7 @@ main {
     background-color: #e4c9c3c9;
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-  }
-}
+    border-radius: 50%; } }
 
 @media only screen and (max-width: 500px) {
   .circuloFondo{
@@ -199,13 +188,66 @@ main {
     background-color: #e4c9c3c9;
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-  }
-}
+    border-radius: 50%; } }
 .FondoDegradado{
   position: relative;
   background-image: linear-gradient( #F4DAD4 35%, white);}
 
 .quienesSomos{
-  margin: 25px 35px 0px 35px;
+  margin: 25px 35px 0px 35px; }
+
+.fondoEscenciales{
+  margin-left: 20px;
+  background-color:#b294d4;
+  max-width: 180px;
+  max-height: 100%; }
+
+.fondoEscenciales img{
+  max-width: 220px;
+  max-height: 220px; }
+
+.fondoHidrolatos{
+  margin-left: 20px;
+  background-color:#f3dfdb ;
+  max-width: 180px;
+  max-height: 100%; }
+
+.fondoHidrolatos img{
+  max-width: 220px;
+  max-height: 220px; }
+
+.fondoVegetales{
+  margin-left: 20px;
+  background-color:#bbbfc4;
+  max-width: 180px;
+  max-height: 100%; }
+
+.fondoVegetales img{
+  max-width: 220px;
+  max-height: 220px;
 }
+
+.fondoVarios{
+  margin-left: 20px;
+  background-color:#9ab3d3;
+  max-width: 180px;
+  max-height: 100%; }
+
+.fondoVarios img{
+  max-width: 220px;
+  max-height: 220px; }
+
+.fondoSinteticos{
+  margin-left: 20px;
+  background-color:#f0d3b2;
+  max-width: 180px;
+  max-height: 100%; }
+
+.fondosinteticos img{
+  max-width: 220px;
+  max-height: 220px; }
+
+.cardsFlex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
