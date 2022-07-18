@@ -1,0 +1,38 @@
+.footerContainer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-items: center;
+    background-color: #faf3f1;
+}
+
+.footerContainer ul {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerContainer li {
+    margin: 2px;
+    background-color: #838991;
+    border-radius: 30%;
+    padding: 6px;
+}
+
+.logoFooter a img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    min-width: 90px;
+}
+
+.logoFooter {
+    text-align: center;
+}
+  

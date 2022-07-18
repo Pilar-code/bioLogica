@@ -1,0 +1,211 @@
+@font-face {
+  font-family: ralewayBold;
+  src: url(../font/Raleway-Bold.ttf); }
+
+@font-face {
+  font-family: ralewayMedium;
+  src: url(../font/Raleway-Medium.ttf); }
+
+@font-face {
+  font-family: ralewayLight;
+  src: url(../font/Raleway-Light.ttf); }
+
+.nav {
+  background-color: #faf3f1;
+  color: #5E666F; }
+
+.nav-link {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px; }
+
+.active {
+  background-color: #A585C9;
+  color: #5E666F;
+  border-radius: 5px; }
+
+.logoNav img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  min-width: 90px; }
+
+.footerContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+  background-color: #faf3f1; }
+
+.footerContainer ul {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.footerContainer li {
+  margin: 2px;
+  background-color: #838991;
+  border-radius: 30%;
+  padding: 6px; }
+
+.logoFooter a img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  min-width: 90px; }
+
+.logoFooter {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+/* scroll suave */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 100%;
+  font-family: ralewayMedium;
+  color: #5E666F;
+  line-height: 1.4em; }
+
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;}
+
+.btnWhatsApp {
+  position: fixed;
+  bottom: 15vh;
+  right: 8px;
+  z-index: 100; }
+
+.btnWhatsApp a img {
+  max-width: 85px;}
+
+.presentacionPagina {
+  z-index: 10;
+  margin: 0px;
+  padding-left: 50px;
+  padding-top: 80px;
+}
+
+.presentacionPagina h1{
+  font-size: 40px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 220px;}
+
+.presentacionPagina p{
+  font-size: 16px;
+  width: 100%;
+  max-width: 420px;
+  z-index: 1;
+}
+
+.presentacionPagina button {
+  width:115px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #A585C9;
+}
+
+.presentacionPagina button a {
+  text-decoration: none;
+  color:#5E666F;
+  font-size: 15px;
+}
+
+.presentacionPagina button:hover {
+  width:115px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #9b81b9;
+}
+
+.presentacionPagina button a :hover{
+  text-decoration: none;
+  color:#5E666F;
+  font-size: 15px;
+  color: #997bbb;
+}
+
+.circuloFondo{
+  z-index: 0;
+  position: fixed;
+  bottom: -10%;
+  right: -15%;
+  background-color: #e4c9c3c9;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+.circuloFondo img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+}
+
+@media only screen and (max-width: 910px) {
+  .circuloFondo{
+    z-index: 0;
+    position: fixed;
+    bottom: -10%;
+    right: -15%;
+    background-color: #e4c9c3c9;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  }
+}
+@media only screen and (max-width: 700px){
+  .circuloFondo{
+    z-index: 0;
+    position: fixed;
+    bottom: -18%;
+    right: -18%;
+    background-color: #e4c9c3c9;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .circuloFondo{
+    z-index: 0;
+    position: fixed;
+    bottom: -30%;
+    right: -15%;
+    background-color: #e4c9c3c9;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  }
+}
+.FondoDegradado{
+  position: relative;
+  background-image: linear-gradient( #F4DAD4 35%, white);}
+
+.quienesSomos{
+  margin: 25px 35px 0px 35px;
+}
