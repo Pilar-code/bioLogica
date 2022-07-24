@@ -1,0 +1,39 @@
+.dropup {
+    opacity: 1;
+    position: fixed;
+    bottom: 13vh;
+    right: 8px;
+
+    button {
+        padding: 0;
+        border: 0;
+    }
+
+    a img {
+        width: 80px;
+    }
+}
+
+div > button > img {
+    max-width: 50px;
+    background-color: $ColorSecundario;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+
+.dropdown-menu {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    min-width: 0;
+
+    li {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    li img{
+        width: 50px;
+    }
+}

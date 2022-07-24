@@ -21,7 +21,6 @@
 
 .active {
   background-color: #A585C9;
-  color: #5E666F;
   border-radius: 5px; }
 
 .logoNav img {
@@ -30,10 +29,36 @@
   max-width: 120px;
   min-width: 90px; }
 
+.dropup {
+  opacity: 1;
+  position: fixed;
+  bottom: 13vh;
+  right: 8px; }
+  .dropup button {
+    padding: 0;
+    border: 0; }
+  .dropup a img {
+    width: 80px; }
+
+div > button > img {
+  max-width: 50px;
+  background-color: #A585C9;
+  border-radius: 50%;
+  padding: 10px; }
+
+.dropdown-menu {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  min-width: 0; }
+  .dropdown-menu li {
+    padding: 0;
+    padding-bottom: 10px; }
+  .dropdown-menu li img {
+    width: 50px; }
+
 .footerContainer {
-  width: 100%;
-  position: absolute;
-  bottom: 0%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
@@ -63,6 +88,96 @@
 .logoFooter {
   text-align: center; }
 
+.presentacionContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.presentacionPagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center; }
+  .presentacionPagina h1 {
+    font-weight: 600;
+    color: #486494; }
+  .presentacionPagina button {
+    width: 115px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #A585C9; }
+    .presentacionPagina button a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px; }
+    .presentacionPagina button :hover {
+      width: 115px;
+      height: 30px;
+      border-radius: 10px;
+      background-color: #9b81b9; }
+
+.imgContainer {
+  display: flex;
+  justify-content: flex-end; }
+  .imgContainer img {
+    width: 50vw;
+    max-width: 800px;
+    height: auto; }
+
+@media only screen and (max-width: 469px) {
+  .presentacionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .imgContainer {
+    display: none; } }
+
+.fondoEscenciales {
+  margin-left: 20px;
+  background-color: #b294d4;
+  max-width: 180px;
+  max-height: 100%; }
+  .fondoEscenciales img {
+    max-width: 220px;
+    max-height: 220px; }
+
+.fondoHidrolatos {
+  margin-left: 20px;
+  background-color: #f3dfdb;
+  max-width: 180px;
+  max-height: 100%; }
+  .fondoHidrolatos img {
+    max-width: 220px;
+    max-height: 220px; }
+
+.fondoVegetales {
+  margin-left: 20px;
+  background-color: #bbbfc4;
+  max-width: 180px;
+  max-height: 100%; }
+  .fondoVegetales img {
+    max-width: 220px;
+    max-height: 220px; }
+
+.fondoVarios {
+  margin-left: 20px;
+  background-color: #9ab3d3;
+  max-width: 180px;
+  max-height: 100%; }
+  .fondoVarios img {
+    max-width: 220px;
+    max-height: 220px; }
+
+.fondoSinteticos {
+  margin-left: 20px;
+  background-color: #f0d3b2;
+  max-width: 180px;
+  max-height: 100%; }
+  .fondoSinteticos img {
+    max-width: 220px;
+    max-height: 220px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -74,21 +189,28 @@
 li {
   list-style-type: none; }
 
-/* scroll suave */
-html {
-  scroll-behavior: smooth; }
-
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-size: 100%;
   font-family: ralewayMedium;
   color: #5E666F;
   line-height: 1.4em; }
 
+html {
+  scroll-behavior: smooth; }
+
+header {
+  width: 100%; }
+
 main {
   width: 100%;
-  height:80vh;
-  max-width: 100%;
-  max-height: 100%;}
+  background-image: linear-gradient(#F4DAD4 35%, white); }
+
+footer {
+  width: 100%;
+  margin-top: auto; }
 
 .btnWhatsApp {
   position: fixed;
@@ -97,157 +219,9 @@ main {
   z-index: 100; }
 
 .btnWhatsApp a img {
-  max-width: 85px;}
+  max-width: 85px; }
 
-.presentacionPagina {
-  z-index: 10;
-  margin: 0px;
-  padding-left: 50px;
-  padding-top: 80px;
-}
-
-.presentacionPagina h1{
-  font-size: 40px;
-  font-weight: 600;
-  width: 100%;
-  max-width: 220px; }
-
-.presentacionPagina p{
-  font-size: 16px;
-  width: 100%;
-  max-width: 420px;
-  z-index: 1; }
-
-.presentacionPagina button {
-  width:115px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #A585C9; }
-
-.presentacionPagina button a {
-  text-decoration: none;
-  color:#5E666F;
-  font-size: 15px; }
-
-.presentacionPagina button:hover {
-  width:115px;
-  height: 30px;
-  border-radius: 10px;
-  background-color: #9b81b9; }
-
-.presentacionPagina button a :hover{
-  text-decoration: none;
-  color:#5E666F;
-  font-size: 15px;
-  color: #997bbb; }
-
-.circuloFondo{
-  z-index: 0;
-  position: fixed;
-  bottom: -10%;
-  right: -15%;
-  background-color: #e4c9c3c9;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%; }
-
-.circuloFondo img {
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 20%;
-  right: 50%; }
-
-@media only screen and (max-width: 910px) {
-  .circuloFondo{
-    z-index: 0;
-    position: fixed;
-    bottom: -10%;
-    right: -15%;
-    background-color: #e4c9c3c9;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%; } }
-@media only screen and (max-width: 700px){
-  .circuloFondo{
-    z-index: 0;
-    position: fixed;
-    bottom: -18%;
-    right: -18%;
-    background-color: #e4c9c3c9;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%; } }
-
-@media only screen and (max-width: 500px) {
-  .circuloFondo{
-    z-index: 0;
-    position: fixed;
-    bottom: -30%;
-    right: -15%;
-    background-color: #e4c9c3c9;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%; } }
-.FondoDegradado{
-  position: relative;
-  background-image: linear-gradient( #F4DAD4 35%, white);}
-
-.quienesSomos{
-  margin: 25px 35px 0px 35px; }
-
-.fondoEscenciales{
-  margin-left: 20px;
-  background-color:#b294d4;
-  max-width: 180px;
-  max-height: 100%; }
-
-.fondoEscenciales img{
-  max-width: 220px;
-  max-height: 220px; }
-
-.fondoHidrolatos{
-  margin-left: 20px;
-  background-color:#f3dfdb ;
-  max-width: 180px;
-  max-height: 100%; }
-
-.fondoHidrolatos img{
-  max-width: 220px;
-  max-height: 220px; }
-
-.fondoVegetales{
-  margin-left: 20px;
-  background-color:#bbbfc4;
-  max-width: 180px;
-  max-height: 100%; }
-
-.fondoVegetales img{
-  max-width: 220px;
-  max-height: 220px;
-}
-
-.fondoVarios{
-  margin-left: 20px;
-  background-color:#9ab3d3;
-  max-width: 180px;
-  max-height: 100%; }
-
-.fondoVarios img{
-  max-width: 220px;
-  max-height: 220px; }
-
-.fondoSinteticos{
-  margin-left: 20px;
-  background-color:#f0d3b2;
-  max-width: 180px;
-  max-height: 100%; }
-
-.fondosinteticos img{
-  max-width: 220px;
-  max-height: 220px; }
-
-.cardsFlex{
+.cardsFlex {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }

@@ -1,38 +1,35 @@
+.presentacionContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .presentacionPagina {
-    z-index: 10;
-    margin: 0px;
-    padding-left: 50px;
-    padding-top: 80px;
-    h1{
-        font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+
+    h1 {
         font-weight: 600;
-        width: 100%;
-        max-width: 220px;
+        color: #486494;
     }
-    p{
-        font-size: 16px;
-        width: 100%;
-        max-width: 420px;
-        z-index: 1;
-    }
+
     button {
-        width:115px;
+        width: 115px;
         height: 30px;
         border-radius: 10px;
         background-color: #A585C9;
+
         a {
             text-decoration: none;
-            color:#5E666F;
+            color: white;
             font-size: 15px;
-            :hover{
-                text-decoration: none;
-                color:#5E666F;
-                font-size: 15px;
-                color: #997bbb;
-            }
         }
+
         :hover {
-            width:115px;
+            width: 115px;
             height: 30px;
             border-radius: 10px;
             background-color: #9b81b9;
@@ -40,24 +37,28 @@
     }
 }
 
-.circuloFondo{
-    z-index: 0;
-    position: fixed;
-    bottom: -10%;
-    right: -15%;
-    background-color: #e4c9c3c9;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    img{
-        max-width: 100%;
-        max-height: 100%;
-        position: absolute;
-        top: 20%;
-        right: 50%;
+.imgContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        width: 50vw;
+        max-width: 800px;
+        height: auto;
     }
 }
-.FondoDegradado{
-    position: relative;
-    background-image: linear-gradient( #F4DAD4 35%, white);
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 469px) {
+
+    .presentacionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgContainer {
+        display: none;
+    }
 }
