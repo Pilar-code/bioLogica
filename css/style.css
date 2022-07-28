@@ -135,48 +135,66 @@ div > button > img {
 
 .fondoEscenciales {
   margin-left: 20px;
-  background-color: #b294d4;
+  margin-top: 12px;
+  background-color: #BEAED0;
   max-width: 180px;
   max-height: 100%; }
   .fondoEscenciales img {
     max-width: 220px;
     max-height: 220px; }
+  .fondoEscenciales div p{
+    margin: 0%;}
 
 .fondoHidrolatos {
   margin-left: 20px;
+  margin-top: 12px;
   background-color: #f3dfdb;
   max-width: 180px;
   max-height: 100%; }
   .fondoHidrolatos img {
     max-width: 220px;
     max-height: 220px; }
+  .fondoHidrolatos div p{
+    margin: 0%;}
 
 .fondoVegetales {
   margin-left: 20px;
-  background-color: #bbbfc4;
+  margin-top: 12px;
+  background-color: #B3B7B9;
   max-width: 180px;
   max-height: 100%; }
   .fondoVegetales img {
     max-width: 220px;
     max-height: 220px; }
+  .fondoVegetales div p{
+    margin: 0%;}
 
 .fondoVarios {
   margin-left: 20px;
-  background-color: #9ab3d3;
+  margin-top: 12px;
+  background-color: #909EB6;
   max-width: 180px;
   max-height: 100%; }
   .fondoVarios img {
     max-width: 220px;
     max-height: 220px; }
+  .fondoVarios div p{
+    margin: 0%;}
 
 .fondoSinteticos {
   margin-left: 20px;
-  background-color: #f0d3b2;
+  margin-top: 12px;
+  background-color: #efc25081;
   max-width: 180px;
   max-height: 100%; }
   .fondoSinteticos img {
     max-width: 220px;
     max-height: 220px; }
+  .fondoSinteticos div p{
+    margin: 0%;}
+
+.card-text {
+  max-width: 8vw;}
 
 * {
   margin: 0;
@@ -186,11 +204,15 @@ div > button > img {
   vertical-align: baseline;
   text-decoration: none; }
 
+h1{
+  font-weight: 400;
+  color: #486494; }
+
 li {
   list-style-type: none; }
 
 body {
-  height: 100vh;
+  min-height: 40rem;
   display: flex;
   flex-direction: column;
   font-size: 100%;
@@ -205,12 +227,24 @@ header {
   width: 100%; }
 
 main {
-  width: 100%;
-  background-image: linear-gradient(#F4DAD4 35%, white); }
+  min-height: 30rem;
+  background-color: #F4DAD4;
+  height: 100%; }
+
+main h1{
+  margin:15px 36px 0px 36px;
+}
+main p{
+  margin:0px 36px 0px 36px;
+}
 
 footer {
   width: 100%;
   margin-top: auto; }
+
+.mainIndex {
+  width: 100%;
+  background-image: linear-gradient(#F4DAD4 35%, white);}
 
 .btnWhatsApp {
   position: fixed;
