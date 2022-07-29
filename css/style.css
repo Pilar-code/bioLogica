@@ -193,9 +193,6 @@ div > button > img {
   .fondoSinteticos div p{
     margin: 0%;}
 
-.card-text {
-  max-width: 8vw;}
-
 * {
   margin: 0;
   padding: 0;
@@ -242,6 +239,13 @@ footer {
   width: 100%;
   margin-top: auto; }
 
+a {
+    color: grey;
+    text-decoration: none;}  
+
+a :hover {
+  color: #9b81b9;}
+
 .mainIndex {
   width: 100%;
   background-image: linear-gradient(#F4DAD4 35%, white);}
@@ -259,3 +263,13 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
+
+.estiloCards {
+  width: 14rem;
+  border: none;
+  background-color: #F4DAD4;}  
+
+.estiloCards :hover {
+  color: #9b81b9;
+  text-decoration: none;
+}  
