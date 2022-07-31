@@ -2,13 +2,22 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- Link Tiny Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <!-- Link CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <title>BioLogica</title>
+
+  <title>Bio-Lógica</title>
+
 </head>
 
 <body>
@@ -25,10 +34,10 @@
       <div class="collapse navbar-collapse" style="justify-content: flex-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../bioLogica/index.html">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="html/quienesSomos.html">Quienes Somos</a>
+            <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="html/catalogo.html">Catálogo</a>
@@ -41,7 +50,7 @@
     </nav>
   </header>
 
-  <main class="presentacionContainer mainIndex">
+  <main class="presentacionContainer mainIndex" id="home">
     <div class="presentacionPagina">
       <h1>Creemos en el poder de la naturaleza</h1>
       <p>
@@ -57,6 +66,101 @@
     </div>
   </main>
 
+  <!-- Quiénes Somos -->
+
+  <article class="quienesSomos" id="quienesSomos">
+    <h1>Nuestra Empresa</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+      labore? Nostrum eum, architecto beatae eos eveniet, numquam corporis
+      dolor harum quaerat sed aspernatur dolore alias, aperiam amet!
+      Molestias, laboriosam quaerat.
+    </p>
+  </article>
+  <br>
+
+  <!-- Carousel -->
+
+  <section id="slider">
+    <div class="container">
+      <div class="subcontainer">
+        <div class="slider-wrapper">
+          <div class="controller">
+            <div id="controls">
+              <button class="previous"><i class="fa-solid fa-circle-chevron-left"></i></button>
+              <button class="next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+          </div>
+          <br>
+          <div class="my-slider">
+            <div>
+              <div class="slide">
+                <div class="slide-img img-1">
+                  <a href="#">Ver más</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Aceite 1</h3>
+                  <p>Descripción</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide">
+                <div class="slide-img img-2">
+                  <a href="#">Ver más</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Aceite 2</h3>
+                  <p>Descripción</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide">
+                <div class="slide-img img-3">
+                  <a href="#">Ver más</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Aceite 3</h3>
+                  <p>Descripción</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide">
+                <div class="slide-img img-4">
+                  <a href="#">Ver más</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Aceite 4</h3>
+                  <p>Descripción</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide">
+                <div class="slide-img img-5">
+                  <a href="#">Ver más</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Aceite 5</h3>
+                  <p>Descripción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fin Quiénes Somos -->
+
   <!-- FAB -->
 
   <div class="dropup">
@@ -64,12 +168,12 @@
     <ul class="dropdown-menu">
       <li>
         <a href="https://wa.me/5493413351511" target="_blank" aria-label="Comunicate por WhatsApp">
-          <img src="./img/whatsapp.svg" alt="Icono de WhatsApp"/>
+          <img src="./img/whatsapp.svg" alt="Icono de WhatsApp" />
         </a>
       </li>
       <li>
         <a href="#" target="_blank" aria-label="Comunicate por Telegram">
-          <img src="./img/telegram.svg" alt="Icono de Telegram"/>
+          <img src="./img/telegram.svg" alt="Icono de Telegram" />
         </a>
       </li>
     </ul>
@@ -98,9 +202,15 @@
     </ul>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
+  <!-- Tiny Slider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <!-- Custom Script Carousel -->
+  <script src="./js/tnslider.js"></script>
+
 </body>
 
 </html>
