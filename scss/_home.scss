@@ -1,3 +1,7 @@
+.mainIndex {
+    background-image: linear-gradient(#F4DAD4 35%, white);
+}
+
 .presentacionContainer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -46,6 +50,13 @@
         max-width: 800px;
         height: auto;
     }
+}
+
+.quienesSomos {
+    padding: 30px;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr;
 }
 
 // MEDIA QUERIES

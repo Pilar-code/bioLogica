@@ -1,0 +1,24 @@
+.catalogoContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: flex-start;
+    padding: 30px;
+}
+
+.cardsFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #F4DAD4;
+}
+
+.estiloCards {
+    border: none;
+    background-color: transparent;
+    :hover {
+    color: #9b81b9;
+    text-decoration: none;
+    }  
+}
