@@ -1,8 +1,9 @@
 let slider = tns({
     container: ".my-slider",
-    "slideBy": 1,
-    "speed": 400,
-    "nav": false,
+    slideBy: 1,
+    speed: 400,
+    center: true,
+    nav: false,
     autoplay: true,
     autoplayHoverPause: true,
     autoplayButtonOutput: false,
@@ -10,21 +11,28 @@ let slider = tns({
     controlsContainer: "#controls",
     prevButton: ".previous",
     nextButton: ".next",
+    gutter: 50,
     responsive: {
-        1600: {
-            items: 4,
-            gutter: 20
+        150: {
+            fixedWidth: 100
         },
-        1024: {
-            items: 3,
-            gutter: 20
+        220: {
+            fixedWidth: 170
         },
-        768: {
-            items: 2,
-            gutter: 20
+        270: {
+            fixedWidth: 220
         },
-        480: {
-            items: 1
+        320: {
+            fixedWidth: 270
+        },
+        375: {
+            fixedWidth: 325
+        },
+        425: {
+            fixedWidth: 375
+        },
+        550: {
+            fixedWidth: 500
         }
     }
 })

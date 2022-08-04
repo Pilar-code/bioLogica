@@ -13,7 +13,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    vertical-align: baseline;
     text-decoration: none;
 }
 
@@ -26,17 +25,19 @@ li {
     list-style-type: none;
 }
 
+// Scroll suave
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: $FuentePrincipal;
     color: $ColorFuente;
-}
-
-//scroll suave
-html {
-    scroll-behavior: smooth;
 }
 
 header {

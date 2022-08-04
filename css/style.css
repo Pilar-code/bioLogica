@@ -105,17 +105,13 @@
     text-decoration: none; }
 
 #slider {
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.container {
-  width: 1600px;
-  margin: auto; }
-
-.subcontainer {
-  width: 85vw;
+.container-slider {
+  width: 100%;
   margin: auto; }
 
 .controller {
@@ -130,8 +126,8 @@
   cursor: pointer; }
 
 .slide-img {
-  height: 275px;
-  border-radius: 10%;
+  height: 350px;
+  border-radius: 5%;
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -169,10 +165,6 @@
 
 .img-5 {
   background-image: url(https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4041392.jpg&fm=jpg); }
-
-@media (max-width: 1600px) {
-  .container {
-    width: 100%; } }
 
 .fondoEscenciales {
   margin: 20px;
@@ -293,7 +285,6 @@ div > button > img {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  vertical-align: baseline;
   text-decoration: none; }
 
 h1 {
@@ -303,15 +294,16 @@ h1 {
 li {
   list-style-type: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: ralewayMedium;
   color: #5E666F; }
-
-html {
-  scroll-behavior: smooth; }
 
 header {
   width: 100%; }
