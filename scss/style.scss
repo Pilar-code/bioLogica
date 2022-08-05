@@ -16,7 +16,7 @@
     text-decoration: none;
 }
 
-h1{
+h1, h2 {
     font-weight: 600;
     color: #486494;
 }
@@ -46,7 +46,6 @@ header {
 
 main {
     width: 100%;
-    background-color: #F4DAD4;
 }
 
 footer {
@@ -57,7 +56,8 @@ footer {
 a {
     color: grey;
     text-decoration: none;
-    :hover{
-        color:#9b81b9;
+
+    :hover {
+        color: #9b81b9;
     }
 }
