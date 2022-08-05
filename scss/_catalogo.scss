@@ -1,8 +1,15 @@
-.catalogoContainer {
+.containerProductos {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(178.94deg, #F4DAD4 6.25%, #FBF2F0 117.52%);
+    padding-bottom: 15px;
+}
+
+.encabezadoProductos {
+    display: flex;
+    flex-direction: column;
     padding: 30px;
 }
 
@@ -11,7 +18,6 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    background-color: #F4DAD4;
 }
 
 .estiloCards {

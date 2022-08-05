@@ -11,7 +11,8 @@
   src: url(../font/Raleway-Light.ttf); }
 
 .nav {
-  background-color: #faf3f1;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.07);
   color: #5E666F; }
 
 .nav-link {
@@ -20,8 +21,12 @@
   margin-top: 10px; }
 
 .active {
-  background-color: #A585C9;
-  border-radius: 5px; }
+  color: #486494 !important; }
+
+.bcg-btnPedido {
+  color: #fff;
+  background-color: rgba(165, 133, 201, 0.75);
+  border-radius: 7.29px; }
 
 .logoNav img {
   width: 100%;
@@ -29,7 +34,7 @@
   max-width: 120px;
   min-width: 90px; }
 
-.mainIndex {
+.sectionIndex {
   background-image: linear-gradient(#F4DAD4 35%, white); }
 
 .presentacionContainer {
@@ -43,9 +48,6 @@
   align-items: center;
   padding: 30px;
   text-align: center; }
-  .presentacionPagina h1 {
-    font-weight: 600;
-    color: #486494; }
   .presentacionPagina button {
     width: 115px;
     height: 30px;
@@ -83,19 +85,24 @@
   .imgContainer {
     display: none; } }
 
-.catalogoContainer {
+.containerProductos {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(178.94deg, #F4DAD4 6.25%, #FBF2F0 117.52%);
+  padding-bottom: 15px; }
+
+.encabezadoProductos {
+  display: flex;
+  flex-direction: column;
   padding: 30px; }
 
 .cardsFlex {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  background-color: #F4DAD4; }
+  justify-content: center; }
 
 .estiloCards {
   border: none;
@@ -251,34 +258,19 @@ div > button > img {
 
 .footerContainer {
   width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  align-items: center;
-  justify-items: center;
-  background-color: #faf3f1; }
-
-.footerContainer ul {
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); }
+  .footerContainer p, .footerContainer ul {
+    margin: 0; }
 
-.footerContainer li {
-  margin: 2px;
-  background-color: #838991;
-  border-radius: 30%;
-  padding: 6px; }
-
-.logoFooter a img {
-  width: 100%;
-  height: auto;
-  max-width: 120px;
-  min-width: 90px; }
-
-.logoFooter {
-  text-align: center; }
+.footerContainer ul {
+  display: flex; }
 
 * {
   margin: 0;
@@ -287,7 +279,7 @@ div > button > img {
   box-sizing: border-box;
   text-decoration: none; }
 
-h1 {
+h1, h2 {
   font-weight: 600;
   color: #486494; }
 
@@ -309,8 +301,7 @@ header {
   width: 100%; }
 
 main {
-  width: 100%;
-  background-color: #F4DAD4; }
+  width: 100%; }
 
 footer {
   width: 100%;

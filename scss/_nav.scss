@@ -1,5 +1,6 @@
 .nav {
-    background-color: #faf3f1;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.07);
     color: $ColorFuente;
 }
 
@@ -10,8 +11,13 @@
 }
 
 .active {
-    background-color: $ColorSecundario;
-    border-radius: 5px;
+    color: #486494 !important;
+}
+
+.bcg-btnPedido {
+    color: #fff;
+    background-color:rgba(165, 133, 201, 0.75);
+    border-radius: 7.29px;
 }
 
 .logoNav img {
