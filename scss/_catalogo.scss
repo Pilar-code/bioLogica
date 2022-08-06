@@ -23,8 +23,17 @@
 .estiloCards {
     border: none;
     background-color: transparent;
+    max-width: 180px;
+    height: 300px;
     :hover {
     color: #9b81b9;
     text-decoration: none;
-    }  
+    } 
+    div p{
+        text-align: center;
+    } 
+    div img{
+        background-color: transparent;
+        border: none;
+    }
 }

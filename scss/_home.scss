@@ -1,5 +1,5 @@
-.sectionIndex {
-    background-image: linear-gradient(#F4DAD4 35%, white);
+.sectionHome {
+    background-image: linear-gradient(178.94deg, #FFFAF9 51.93%, #F4DAD4 117.52%);
 }
 
 .presentacionContainer {
@@ -52,6 +52,45 @@
     display: grid;
     align-self: center;
     grid-template-columns: 1fr;
+
+}
+
+.sectionQuienesSomos{
+    background-color: #FFEEEB; 
+}
+
+.sectionProcesos{
+    background-color: #F4DADA;
+}
+
+.sectionProcesos {
+    background-color: #F4DAD4;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "a1"
+                         "a2";
+    h1{
+      grid-area: "a1";}
+    span{
+      grid-area: a2;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      text-align-last: center;
+      div {
+        width: 180px; 
+        img {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 55%;
+            width: 150px;
+            height: 150px; 
+        }
+        p {
+            text-align: center; 
+        }
+      }
+    }
 }
 
 // MEDIA QUERIES

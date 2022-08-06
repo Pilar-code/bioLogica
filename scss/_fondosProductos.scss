@@ -1,12 +1,16 @@
 @mixin fondoCards($color) {
-    margin: 20px;
+    //margin: 20px;
     background-color: $color;
-    max-width: 180px;
-    max-height: 100%;
-
+    width: 180px;
+    height: 168px;
+    border-radius: 40px;
     img {
-        max-width: 220px;
-        max-height: 220px;
+        max-width: 218px;
+        max-height: 210px;
+        position: relative;
+        bottom: 25%;
+        left: 24%;
+        right: 40%; 
     }
     div p {
         margin: 0%;

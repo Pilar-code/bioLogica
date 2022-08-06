@@ -34,8 +34,8 @@
   max-width: 120px;
   min-width: 90px; }
 
-.sectionIndex {
-  background-image: linear-gradient(#F4DAD4 35%, white); }
+.sectionHome {
+  background-image: linear-gradient(178.94deg, #FFFAF9 51.93%, #F4DAD4 117.52%); }
 
 .presentacionContainer {
   display: grid;
@@ -75,7 +75,36 @@
   padding: 30px;
   display: grid;
   align-self: center;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;}
+
+.sectionQuienesSomos{
+  background-color: #FFEEEB; } 
+
+.sectionProcesos {
+  background-color: #F4DAD4;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "a1"
+                       "a2"; }
+  .sectionProcesos h1{
+    grid-area: "a1";
+  }
+  .sectionProcesos span{
+    grid-area: a2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align-last: center;}
+  .sectionProcesos span div {
+    width: 180px; }
+  .sectionProcesos span div img {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 55%;
+    width: 150px;
+    height: 150px; }
+  .sectionProcesos span div p {
+    text-align: center; }
 
 @media only screen and (max-width: 469px) {
   .presentacionContainer {
@@ -106,10 +135,17 @@
 
 .estiloCards {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  max-width: 180px;
+  height: 300px;}
   .estiloCards :hover {
     color: #9b81b9;
     text-decoration: none; }
+  .estiloCards div p {
+    text-align: center; }
+  .estiloCards div img {
+    background-color: transparent;
+    border: none;  }
 
 #slider {
   height: auto;
@@ -174,57 +210,82 @@
   background-image: url(https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4041392.jpg&fm=jpg); }
 
 .fondoEscenciales {
-  margin: 20px;
+  /*margin: 20px;*/
   background-color: #BEAED0;
-  max-width: 180px;
-  max-height: 100%; }
+  width: 180px;
+  height: 168px;
+  border-radius: 40px;}
   .fondoEscenciales img {
-    max-width: 220px;
-    max-height: 220px; }
+    max-width: 180px;
+    max-height: 210px; 
+    position: relative;
+    bottom: 25%;
+    left: 24%;
+    right: 40%; }
   .fondoEscenciales div p {
     margin: 0%; }
 
 .fondoHidrolatos {
-  margin: 20px;
-  background-color: #f3dfdb;
-  max-width: 180px;
-  max-height: 100%; }
+  /*margin: 20px;*/
+  background-color: #ddd1ce;
+  width: 180px;
+  height: 168px;
+  border-radius: 40px; }
   .fondoHidrolatos img {
-    max-width: 220px;
-    max-height: 220px; }
+    max-width: 180px;
+    max-height: 210px;
+    position: relative;
+    bottom: 25%;
+    left: 24%;
+    right: 40%; }
   .fondoHidrolatos div p {
     margin: 0%; }
 
 .fondoVegetales {
-  margin: 20px;
+  /*margin: 20px;*/
   background-color: #B3B7B9;
-  max-width: 180px;
-  max-height: 100%; }
+  width: 180px;
+  height: 168px;
+  border-radius: 40px; }
   .fondoVegetales img {
-    max-width: 220px;
-    max-height: 220px; }
+    max-width: 180px;
+    max-height: 210px; 
+    position: relative;
+    bottom: 25%;
+    left: 24%;
+    right: 40%; }
   .fondoVegetales div p {
     margin: 0%; }
 
 .fondoVarios {
-  margin: 20px;
+  /*margin: 20px;*/
   background-color: #909EB6;
-  max-width: 180px;
-  max-height: 100%; }
+  width: 180px;
+  height: 168px;
+  border-radius: 40px; }
   .fondoVarios img {
-    max-width: 220px;
-    max-height: 220px; }
+    max-width: 180px;
+    max-height: 210px;
+    position: relative;
+    bottom: 25%;
+    left: 24%;
+    right: 40%; }
   .fondoVarios div p {
     margin: 0%; }
 
 .fondoSinteticos {
-  margin: 20px;
+  /*margin: 20px;*/
   background-color: #efc25081;
-  max-width: 180px;
-  max-height: 100%; }
+  width: 180px;
+  height: 168px;
+  border-radius: 40px;}
   .fondoSinteticos img {
-    max-width: 220px;
-    max-height: 220px; }
+    max-width: 180px;
+    max-height: 210px;
+    position: relative;
+    bottom: 25%;
+    left: 24%;
+    right: 40%;  }
   .fondoSinteticos div p {
     margin: 0%; }
 
