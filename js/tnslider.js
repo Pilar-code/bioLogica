@@ -8,9 +8,8 @@ let slider = tns({
     autoplayHoverPause: true,
     autoplayButtonOutput: false,
     arrowKeys: true,
-    controlsContainer: "#controls",
-    prevButton: ".previous",
-    nextButton: ".next",
+    controls: false,
+    mouseDrag: true,
     gutter: 50,
     responsive: {
         150: {
