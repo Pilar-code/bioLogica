@@ -9,8 +9,6 @@
   <!-- Link Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <!-- Link Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <!-- Link Tiny Slider -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <!-- Link CSS -->
@@ -23,7 +21,8 @@
 <body>
 
   <header class="nav navbar sticky-top navbar-expand-md">
-    <nav class="container-fluid justify-content-around">
+
+    <nav id="navScroll" class="container-fluid justify-content-around">
       <a class="navbar-brand logoNav ms-3" href="../bioLogica/index.html">
         <img src="img/Logo-azul-transparente.png" alt="Logo de BioLogica" />
       </a>
@@ -34,7 +33,7 @@
       <div class="collapse navbar-collapse" style="justify-content: flex-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#quienesSomos">Quiénes Somos</a>
@@ -43,7 +42,7 @@
             <a class="nav-link" href="html/catalogo.html">Catálogo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="html/contactanos.html">Contactanos</a>
+            <a class="nav-link" href="#contactanos">Contactanos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link bcg-btnPedido" target="_blank"
@@ -53,165 +52,208 @@
         </ul>
       </div>
     </nav>
+
   </header>
 
-  <section class="presentacionContainer sectionHome" id="home">
-    <div class="presentacionPagina">
-      <h1>Creemos en el poder de la naturaleza</h1>
-      <p>
-        Materia prima para cosmética natural y ¡mucho más! Te invitamos a
-        descubrir nuestro catálogo.
-      </p>
-      <button>
-        <a href="html/catalogo.html">Ver Catálogo</a>
-      </button>
-    </div>
-    <div class="imgContainer">
-      <img src="img/Esencia-img-principal.svg" alt="" />
-    </div>
-  </section>
+  <main data-bs-spy="scroll" data-bs-target="#navScroll" data-bs-offset="0" tabindex="0">
 
-  <!-- Quiénes Somos -->
-<div class="sectionQuienesSomos">
-  
-    <section class="quienesSomos" id="quienesSomos">
-      <h2>Nuestra Empresa</h2>
-      <p>¡Hola! Somos BioLógica. Una empresa santafesina dedicada al procesamiento de hierbas aromáticas  e Iniciamos desde el 2002
-         desarrollando experiencia en cultivos agroecológicos de diferentes variedades aromáticas.</p>
-      <p>Con el paso de los años y el análisis de nuestras fortalezas nos enfocamos en el procesamiento físico-químico de la materia prima y
-        desarrollamos nuestra propia línea de productos naturales para el bienestar e incorporamos productos y servicios destinados a otros
-        productores y elaboradores.</p>
-      <p>Actualmente, deshidratamos y destilamos diferentes variedades de aromáticas producidas en forma agroecológica en nuestra región,
-        respetando el medioambiente y a los seres que lo habitan.Nuestro trabajo se extiende desde la selección de materias primas, obtención,
-        envasado y empaque. Nos motiva ofrecer materias primas de calidad destinadas a la elaboración de productos cosméticos, alimenticios y domisanitarios.</p>
-    </section>
-    <br>
-  
-    <!-- Carousel -->
-  
-    <section id="slider">
-      <div class="container-slider">
-        <div class="slider-wrapper">
-          <div class="controller">
-            <div id="controls">
-              <button class="previous"><i class="fa-solid fa-circle-chevron-left"></i></button>
-              <button class="next"><i class="fa-solid fa-circle-chevron-right"></i></button>
-            </div>
-          </div>
-          <br>
-          <div class="my-slider">
-            <div>
-              <div class="slide">
-                <div class="slide-img img-1">
-                  <a href="#">Ver más</a>
-                </div>
-                <br>
-                <div>
-                  <h3>Aceite 1</h3>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="slide">
-                <div class="slide-img img-2">
-                  <a href="#">Ver más</a>
-                </div>
-                <br>
-                <div>
-                  <h3>Aceite 2</h3>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="slide">
-                <div class="slide-img img-3">
-                  <a href="#">Ver más</a>
-                </div>
-                <br>
-                <div>
-                  <h3>Aceite 3</h3>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="slide">
-                <div class="slide-img img-4">
-                  <a href="#">Ver más</a>
-                </div>
-                <br>
-                <div>
-                  <h3>Aceite 4</h3>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="slide">
-                <div class="slide-img img-5">
-                  <a href="#">Ver más</a>
-                </div>
-                <br>
-                <div>
-                  <h3>Aceite 5</h3>
-                  <p>Descripción</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="presentacionContainer sectionHome" id="home">
+
+      <div class="presentacionPagina">
+        <h1>Conectar con la naturaleza, es conectar con nuestra esencia.</h1>
+        <p>
+          Comercializamos aceites esenciales, hidrolatos, aceites y mantecas vegetales con certificación analítica de
+          calidad.
+        </p>
+        <button>
+          <a href="html/catalogo.html">Ver Catálogo</a>
+        </button>
       </div>
+      <div class="imgContainer">
+        <img src="img/Esencia-img-principal.svg" alt="Imagen de Portada" />
+      </div>
+
     </section>
-  
-</div>
 
+    <!-- Quiénes Somos -->
 
-  <!-- Fin Quiénes Somos -->
-  
-  <!-- Proceso Productos -->
+    <div id="quienesSomos" class="sectionQuienesSomos">
 
-  <section class="sectionProcesos">
-        <h1>Te contamos el proceso de nuestros productos:</h1>
-      <span>
-        <div>
-          <img src="./img/MateriaPrima.png" alt="">
-          <p>Nuestro equipo selecciona materias primas de calidad.</p>
+      <section class="quienesSomos">
+
+        <h2>Nuestra empresa</h2>
+        <p>
+          ¡Hola! <strong>Somos BioLógica</strong>. Una empresa santafesina dedicada al <strong>procesamiento de hierbas
+            aromáticas</strong> e iniciamos desde el 2002, desarrollando <strong>experiencia en cultivos
+            agroecológicos</strong> de diferentes variedades aromáticas.
+        </p>
+        <p>
+          Con el paso de los años y el análisis de nuestras fortalezas nos enfocamos en el procesamiento físico-químico
+          de la <strong>materia prima</strong> y <strong>desarrollamos nuestra propia línea</strong> de
+          <strong>productos naturales</strong> para el bienestar e incorporamos productos y servicios destinados a otros
+          productores y elaboradores.
+        </p>
+        <p>
+          Actualmente, <strong>deshidratamos y destilamos</strong> diferentes variedades de aromáticas producidas en
+          <strong>forma agroecológica</strong>
+          en nuestra región, respetando el medioambiente y a los seres que lo habitan. Nuestro trabajo se extiende desde
+          la selección de materias primas, obtención, envasado y empaque. <strong>Nos motiva ofrecer materias primas de
+            calidad</strong>
+          destinadas a la elaboración de productos <strong>cosméticos, alimenticios y domisanitarios</strong>.
+        </p>
+
+      </section>
+      <br>
+
+      <!-- Carousel -->
+
+      <section id="slider">
+
+        <div class="container-slider">
+          <div class="slider-wrapper">
+            <div class="my-slider">
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-1">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-2">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-3">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-4">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-5">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="./img/Valor.png" alt="">
-          <p>El pedido ingresa a producción, donde agregamos valor y cuidamos cada detalle.</p>
+
+      </section>
+
+    </div>
+
+    <!-- Fin Quiénes Somos -->
+
+    <!-- Proceso Productos -->
+
+    <section class="sectionProcesos">
+
+      <div class="encabezadoProceso">
+        <h2>Te contamos el proceso de nuestros productos:</h2>
+      </div>
+
+      <div class="procesoProductos">
+        <article>
+          <img src="./img/MateriaPrima.png" alt="Imagen referida a las Materias Primas">
+          <p>Nuestro equipo selecciona <strong>materias primas</strong> de calidad.</p>
+        </article>
+        <div class="flecha">
+          <img src="./img/flecha.png" alt="Flecha">
         </div>
-        <div>
-          <img src="./img/Producto.png" alt="">
-          <p>Entregamos el producto en el lugar y en el momento acordado con el cliente.</p>
+        <article>
+          <img src="./img/Valor.png" alt="Imagen de un Foco de luz referida a las ideas">
+          <p>El pedido ingresa a producción, donde <strong>agregamos valor</strong> y cuidamos cada detalle.</p>
+        </article>
+        <div class="flecha">
+          <img src="./img/flecha.png" alt="Flecha">
         </div>
-      </span>
-  </section>
+        <article>
+          <img src="./img/Producto.png" alt="Imagen referida al producto">
+          <p><strong>Entregamos el producto</strong> en el lugar y en el momento acordado con el cliente.</p>
+        </article>
+      </div>
 
+    </section>
 
-  <!-- Fin Proceso -->
+    <!-- Fin Proceso Productos -->
 
-  <!-- FAB -->
+    <!-- Contactanos -->
 
-  <div class="dropup">
-    <button class="btn dropdown" data-bs-toggle="dropdown"><img src="./img/fab-icon.png" alt="Botón Flotante"></button>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="https://wa.me/5493413351511" target="_blank" aria-label="Comunicate por WhatsApp">
-          <img src="./img/whatsapp.svg" alt="Icono de WhatsApp" />
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank" aria-label="Comunicate por Telegram">
-          <img src="./img/telegram.svg" alt="Icono de Telegram" />
-        </a>
-      </li>
-    </ul>
-  </div>
+    <section id="contactanos">
+      <div class="encabezadoContactanos">
+        <h2>¡Contactanos!</h2>
+        <p>A la hora de comprar pueden surgirte miles de dudas y consultas. Que las variedades, las cantidades, los
+          pagos, los envíos… A veces necesitamos una voz humana que nos dé una mano. ¡Y acá estamos! Nuestro equipo va a
+          responder tus inquietudes.</p>
+      </div>
 
-  <!-- Fin del FAB -->
+      <article class="contenidoContactanos">
+
+        <aside class="asideRedes">
+          <p>
+            <img src="./img/llamada-contact.png" alt="Icono de un Teléfono">
+            Llamanos: +5493416964367
+          </p>
+          <p>
+            <img src="./img/mail-contact.png" alt="Icono de un E-mail">
+            Envianos un correo: hola.biologica.sas@gmail.com
+          </p>
+          <br>
+          <h4>
+            Seguinos en las redes:
+          </h4>
+          <div>
+            <a href="#"><img src="./img/facebook-contact.png" alt="Icono de Facebook"></a>
+            <a href="#"><img src="./img/instagram-contact.png" alt="Icono de Instagram"></a>
+          </div>
+        </aside>
+        <aside class="asideMapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.451514349977!2d-60.69022265269664!3d-31.62148576094674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9eff052c9c3%3A0xe6093f53e985db89!2sAlberdi%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1659917535918!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+
+      </article>
+    </section>
+
+    <!-- Fin de Contactanos -->
+
+    <!-- FAB -->
+
+    <div class="dropup">
+      <button class="btn dropdown" data-bs-toggle="dropdown"><img src="./img/fab-icon.png"
+          alt="Botón Flotante"></button>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="https://wa.me/5493413351511" target="_blank" aria-label="Comunicate por WhatsApp">
+            <img src="./img/whatsapp.svg" alt="Icono de WhatsApp" />
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" aria-label="Comunicate por Telegram">
+            <img src="./img/telegram.svg" alt="Icono de Telegram" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Fin del FAB -->
+
+  </main>
 
   <footer class="footerContainer">
     <p>&copy; 2022 - Todos los derechos reservados.</p>
@@ -233,8 +275,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
   <!-- Custom Script Carousel -->
   <script src="./js/tnslider.js"></script>
-  <!-- Highlight Nav on scroll -->
-  <script src="./js/highlightOnScroll.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
 
 </body>
 

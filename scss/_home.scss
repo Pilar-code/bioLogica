@@ -1,5 +1,5 @@
 .sectionHome {
-    background-image: linear-gradient(178.94deg, #FFFAF9 51.93%, #F4DAD4 117.52%);
+    background: linear-gradient(180deg, rgba(255, 250, 249, 0) 0%, #FFF4F2 100%);
 }
 
 .presentacionContainer {
@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    text-align: center;
 
     button {
         width: 115px;
@@ -52,48 +51,108 @@
     display: grid;
     align-self: center;
     grid-template-columns: 1fr;
-
 }
 
-.sectionQuienesSomos{
-    background-color: #FFEEEB; 
-}
-
-.sectionProcesos{
-    background-color: #F4DADA;
+.sectionQuienesSomos {
+    background-color: #FFEEEB;
 }
 
 .sectionProcesos {
     background-color: #F4DAD4;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-areas: "a1"
-                         "a2";
-    h1{
-      grid-area: "a1";}
-    span{
-      grid-area: a2;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      text-align-last: center;
-      div {
-        width: 180px; 
-        img {
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 55%;
-            width: 150px;
-            height: 150px; 
-        }
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezadoProceso {
+    padding: 30px;
+}
+
+.procesoProductos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 10px 0px 10px;
+
+    article {
+        max-width: 200px;
+        max-height: auto;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
         p {
-            text-align: center; 
+            color: #486494;
         }
-      }
+    }
+
+    article img {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        max-width: 125px;
+        margin-bottom: 10px;
+    }
+}
+
+.flecha img {
+    background: transparent !important;
+    max-width: 150px;
+    max-height: 15px;
+}
+
+.encabezadoContactanos {
+    padding: 30px;
+}
+
+.contenidoContactanos {
+    padding: 0px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.asideRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+
+    div img {
+        max-width: 35px;
+    }
+}
+
+.asideMapa {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
 // MEDIA QUERIES
+
+@media only screen and (max-width: 424px) {
+
+    .contenidoContactanos {
+        grid-template-columns: 1fr;
+    }
+
+    .asideMapa {
+        margin-top: 30px;
+    }
+}
 
 @media only screen and (max-width: 469px) {
 
@@ -105,5 +164,22 @@
 
     .imgContainer {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .procesoProductos {
+        flex-direction: column;
+    }
+
+    .flecha {
+        display: flex;
+        align-items: center;
+        height: 150px;
+
+        img {
+            transform: rotate(90deg);
+        }
     }
 }
