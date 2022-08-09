@@ -39,6 +39,7 @@
 
 .presentacionContainer {
   display: grid;
+  padding: 15px;
   grid-template-columns: 2fr 1fr; }
 
 .presentacionPagina {
