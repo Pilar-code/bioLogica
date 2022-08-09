@@ -141,6 +141,25 @@
     }
 }
 
+#contactanos{
+    background-color: #FFEEEB;
+  }
+  
+.asideNoticia{
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    top: 83px;
+    background-color: #EFCCC4;
+    text-align: center;
+    box-shadow: 0px 20px 50px -10px grey;
+    p {
+      margin-top: 5px;
+      background-color:#EFCCC4;
+    } 
+}
+    
+
 // MEDIA QUERIES
 
 @media only screen and (max-width: 424px) {
