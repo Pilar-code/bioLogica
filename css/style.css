@@ -39,8 +39,8 @@
 
 .presentacionContainer {
   display: grid;
-  padding: 15px;
-  grid-template-columns: 2fr 1fr; }
+  grid-template-columns: 2fr 1fr;
+  padding-top: 30px; }
 
 .presentacionPagina {
   display: flex;
@@ -83,7 +83,8 @@
 .sectionProcesos {
   background-color: #F4DAD4;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 30px; }
 
 .encabezadoProceso {
   padding: 30px; }
@@ -124,23 +125,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
-#contactanos{
-  background-color: #FFEEEB;
-}
-
-.asideNoticia{
-  position: absolute;
-  height: 35px;
-  width: 100%;
-  top: 83px;
-  background-color: #EFCCC4;
-  text-align: center;
-  box-shadow: 0px 20px 50px -10px grey; }
-  .asideNoticia p {
-    margin-top: 5px;
-    background-color:#EFCCC4;
-  }
-
 .asideRedes {
   display: flex;
   flex-direction: column;
@@ -162,6 +146,21 @@
     right: 0;
     width: 100%;
     height: 100%; }
+
+#contactanos {
+  background-color: #FFEEEB; }
+
+.asideNoticia {
+  position: absolute;
+  height: 35px;
+  width: 100%;
+  top: 83px;
+  background-color: #EFCCC4;
+  text-align: center;
+  box-shadow: 0px 20px 50px -10px grey; }
+  .asideNoticia p {
+    margin-top: 5px;
+    background-color: #EFCCC4; }
 
 @media only screen and (max-width: 424px) {
   .contenidoContactanos {
@@ -369,7 +368,8 @@
   gap: 10px;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); }
-  .footerContainer p, .footerContainer ul {
+  .footerContainer p,
+  .footerContainer ul {
     margin: 0; }
 
 .footerContainer ul {
@@ -382,7 +382,8 @@
   box-sizing: border-box;
   text-decoration: none; }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 600;
   color: #486494; }
 

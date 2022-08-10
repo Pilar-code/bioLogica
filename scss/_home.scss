@@ -4,8 +4,8 @@
 
 .presentacionContainer {
     display: grid;
-    padding: 15px;
     grid-template-columns: 2fr 1fr;
+    padding-top: 30px;
 }
 
 .presentacionPagina {
@@ -62,6 +62,7 @@
     background-color: #F4DAD4;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .encabezadoProceso {
@@ -142,11 +143,11 @@
     }
 }
 
-#contactanos{
+#contactanos {
     background-color: #FFEEEB;
-  }
-  
-.asideNoticia{
+}
+
+.asideNoticia {
     position: absolute;
     height: 35px;
     width: 100%;
@@ -154,12 +155,12 @@
     background-color: #EFCCC4;
     text-align: center;
     box-shadow: 0px 20px 50px -10px grey;
+
     p {
-      margin-top: 5px;
-      background-color:#EFCCC4;
-    } 
+        margin-top: 5px;
+        background-color: #EFCCC4;
+    }
 }
-    
 
 // MEDIA QUERIES
 

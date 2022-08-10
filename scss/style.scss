@@ -7,7 +7,6 @@
 @import "_fab.scss";
 @import "_footer.scss";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,8 @@
     text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 600;
     color: #486494;
 }
