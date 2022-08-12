@@ -43,6 +43,7 @@
   grid-template-columns: 1fr 1fr; }
 
 .presentacionPagina {
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -162,6 +163,13 @@
     background-color: #EFCCC4;
     margin-bottom: 0; }
 
+@media only screen and (min-width: 1250px){
+  .presentacionPagina {
+    margin-top: 8%; }
+    .presentacionPagina button {
+      margin-top: 60px; }
+    }
+    
 @media only screen and (max-width: 424px) {
   .contenidoContactanos {
     grid-template-columns: 1fr; }
