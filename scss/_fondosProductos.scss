@@ -5,7 +5,7 @@
     border-radius: 40px;
     border: solid;
     border-color: $color;
-    
+
     img {
         max-width: 218px;
         max-height: 210px;
@@ -20,7 +20,7 @@
     }
 }
 
-.fondoEscenciales {
+.fondoEsenciales {
     @include fondoCards(#BEAED0);
 }
 
@@ -32,7 +32,7 @@
     @include fondoCards(#B3B7B9);
 }
 
-.fondoVarios {
+.fondoCerasMantecas {
     @include fondoCards(#909EB6);
 }
 

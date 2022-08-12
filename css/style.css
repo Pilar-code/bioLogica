@@ -48,9 +48,8 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 50px 30px 30px 30px; }
-  .presentacionPagina h1{
-    margin-bottom: 50px;
-  }
+  .presentacionPagina h1 {
+    margin-bottom: 50px; }
   .presentacionPagina button {
     margin-top: 25px;
     width: 115px;
@@ -163,13 +162,12 @@
     background-color: #EFCCC4;
     margin-bottom: 0; }
 
-@media only screen and (min-width: 1250px){
+@media only screen and (min-width: 1250px) {
   .presentacionPagina {
     margin-top: 8%; }
-    .presentacionPagina button {
-      margin-top: 60px; }
-    }
-    
+  .presentacionPagina button {
+    margin-top: 60px; } }
+
 @media only screen and (max-width: 424px) {
   .contenidoContactanos {
     grid-template-columns: 1fr; }
@@ -281,21 +279,21 @@
 .img-11 {
   background-image: url(../img/Slider/Vivero-a-Campo.JPG); }
 
-.fondoEscenciales {
+.fondoEsenciales {
   background-color: #BEAED0;
   width: 180px;
   height: 168px;
   border-radius: 40px;
   border: solid;
-  border-color: #beaed0; }
-  .fondoEscenciales img {
+  border-color: #BEAED0; }
+  .fondoEsenciales img {
     max-width: 218px;
     max-height: 210px;
     position: relative;
     bottom: 25%;
     left: 24%;
     right: 40%; }
-  .fondoEscenciales div p {
+  .fondoEsenciales div p {
     margin: 0%; }
 
 .fondoHidrolatos {
@@ -332,21 +330,21 @@
   .fondoVegetales div p {
     margin: 0%; }
 
-.fondoVarios {
+.fondoCerasMantecas {
   background-color: #909EB6;
   width: 180px;
   height: 168px;
   border-radius: 40px;
   border: solid;
-  border-color: #909eb6; }
-  .fondoVarios img {
+  border-color: #909EB6; }
+  .fondoCerasMantecas img {
     max-width: 218px;
     max-height: 210px;
     position: relative;
     bottom: 25%;
     left: 24%;
     right: 40%; }
-  .fondoVarios div p {
+  .fondoCerasMantecas div p {
     margin: 0%; }
 
 .fondoSinteticos {

@@ -14,7 +14,7 @@
     align-items: flex-start;
     padding: 50px 30px 30px 30px;
 
-    h1{
+    h1 {
         margin-bottom: 50px;
     }
 
@@ -165,12 +165,15 @@
 
 // MEDIA QUERIES
 
-@media only screen and (min-width: 1250px){
+@media only screen and (min-width: 1250px) {
     .presentacionPagina {
-      margin-top: 8%; }
-      .presentacionPagina button {
-        margin-top: 60px; }
-      }
+        margin-top: 8%;
+    }
+
+    .presentacionPagina button {
+        margin-top: 60px;
+    }
+}
 
 @media only screen and (max-width: 424px) {
 
