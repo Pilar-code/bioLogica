@@ -147,16 +147,13 @@
 }
 
 .asideNoticia {
-    position: absolute;
-    height: 35px;
-    width: 100%;
-    top: 83px;
-    background-color: #EFCCC4;
     text-align: center;
+    background-color: #EFCCC4;
 
     p {
-        margin-top: 5px;
+        padding: 5px;
         background-color: #EFCCC4;
+        margin-bottom: 0;
     }
 }
 
