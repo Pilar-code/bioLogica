@@ -4,16 +4,14 @@
 
 .presentacionContainer {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding-top: 30px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .presentacionPagina {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    align-items: flex-start;
+    padding: 50px 30px 30px 30px;
 
     button {
         width: 115px;
@@ -38,6 +36,7 @@
 
 .imgContainer {
     display: flex;
+    align-items: flex-start;
     justify-content: flex-end;
 
     img {
@@ -55,7 +54,7 @@
 }
 
 .sectionQuienesSomos {
-    background-color: #FFEEEB;
+    background-color: #FFF;
 }
 
 .sectionProcesos {
@@ -174,7 +173,7 @@
     }
 }
 
-@media only screen and (max-width: 469px) {
+@media only screen and (max-width: 725px) {
 
     .presentacionContainer {
         display: flex;
@@ -201,60 +200,5 @@
         img {
             transform: rotate(90deg);
         }
-    }
-    .presentacionPagina{
-        display: flex;
-        padding: 0px 30px 0px 30px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: 30px;
-        max-height: 400px;
-        margin-top: 10%;
-    } 
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
-    .presentacionContainer {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-    }
-    .presentacionPagina {
-        display: flex;
-        padding: 0px 30px 0px 30px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding-top: 30px;
-        max-height: 400px;
-        margin-top: 10%;
-    }
-    .imgContainer {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        top: -80px;
-    }
-}
-  
-@media only screen and (min-width: 1100px){
-    .presentacionContainer {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .presentacionPagina {
-        display: flex;
-        padding: 0px 30px 0px 30px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding-top: 30px;
-        max-height: 500px;
-        margin-top: 15%;
-    }
-    .imgContainer {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        top: -90px;
     }
 }
