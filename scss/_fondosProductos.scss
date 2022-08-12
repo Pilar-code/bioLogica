@@ -3,7 +3,9 @@
     width: 180px;
     height: 168px;
     border-radius: 40px;
-
+    border: solid;
+    border-color: $color;
+    
     img {
         max-width: 218px;
         max-height: 210px;
