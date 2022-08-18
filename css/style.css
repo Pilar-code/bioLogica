@@ -220,7 +220,8 @@
     color: #9b81b9;
     text-decoration: none; }
   .estiloCards div p {
-    text-align: center; }
+    text-align: center;
+    margin-top: 20px; }
   .estiloCards div img {
     background-color: transparent;
     border: none; }
@@ -283,9 +284,7 @@
   background-color: #BEAED0;
   width: 180px;
   height: 168px;
-  border-radius: 40px;
-  border: solid;
-  border-color: #BEAED0; }
+  border-radius: 40px; }
   .fondoEsenciales img {
     max-width: 218px;
     max-height: 210px;
@@ -300,9 +299,7 @@
   background-color: #F4DAD4;
   width: 180px;
   height: 168px;
-  border-radius: 40px;
-  border: solid;
-  border-color: #F4DAD4; }
+  border-radius: 40px; }
   .fondoHidrolatos img {
     max-width: 218px;
     max-height: 210px;
@@ -317,9 +314,7 @@
   background-color: #B3B7B9;
   width: 180px;
   height: 168px;
-  border-radius: 40px;
-  border: solid;
-  border-color: #B3B7B9; }
+  border-radius: 40px; }
   .fondoVegetales img {
     max-width: 218px;
     max-height: 210px;
@@ -334,9 +329,7 @@
   background-color: #909EB6;
   width: 180px;
   height: 168px;
-  border-radius: 40px;
-  border: solid;
-  border-color: #909EB6; }
+  border-radius: 40px; }
   .fondoCerasMantecas img {
     max-width: 218px;
     max-height: 210px;
@@ -351,9 +344,7 @@
   background-color: #efc25081;
   width: 180px;
   height: 168px;
-  border-radius: 40px;
-  border: solid;
-  border-color: #efc25081; }
+  border-radius: 40px; }
   .fondoSinteticos img {
     max-width: 218px;
     max-height: 210px;
