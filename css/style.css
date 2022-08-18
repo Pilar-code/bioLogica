@@ -284,7 +284,9 @@
   background-color: #BEAED0;
   width: 180px;
   height: 168px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  border: solid;
+  border-color: #BEAED0; }
   .fondoEsenciales img {
     max-width: 218px;
     max-height: 210px;
@@ -299,7 +301,9 @@
   background-color: #F4DAD4;
   width: 180px;
   height: 168px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  border: solid;
+  border-color: #F4DAD4; }
   .fondoHidrolatos img {
     max-width: 218px;
     max-height: 210px;
@@ -314,7 +318,9 @@
   background-color: #B3B7B9;
   width: 180px;
   height: 168px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  border: solid;
+  border-color: #B3B7B9; }
   .fondoVegetales img {
     max-width: 218px;
     max-height: 210px;
@@ -329,7 +335,9 @@
   background-color: #909EB6;
   width: 180px;
   height: 168px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  border: solid;
+  border-color: #909EB6; }
   .fondoCerasMantecas img {
     max-width: 218px;
     max-height: 210px;
@@ -344,7 +352,9 @@
   background-color: #efc25081;
   width: 180px;
   height: 168px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  border: solid;
+  border-color: #efc25081; }
   .fondoSinteticos img {
     max-width: 218px;
     max-height: 210px;
