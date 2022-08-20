@@ -31,9 +31,13 @@
         text-decoration: none;
     }
 
-    div p {
+    div {
         text-align: center;
-        margin-top: 20px;
+
+        p:first-child {
+            margin-top: 25px;
+            margin-bottom: 0%;
+        }
     }
 
     div img {

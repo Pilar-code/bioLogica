@@ -76,7 +76,6 @@
 
 .procesoProductos {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 0px 10px 0px 10px;
@@ -108,6 +107,7 @@
     background: transparent !important;
     max-width: 150px;
     max-height: 15px;
+    margin-top: 50px;
 }
 
 .encabezadoContactanos {
@@ -203,6 +203,7 @@
 
     .procesoProductos {
         flex-direction: column;
+        align-items: center;
     }
 
     .flecha {
@@ -212,6 +213,7 @@
 
         img {
             transform: rotate(90deg);
+            margin-top: 0%;
         }
     }
 }

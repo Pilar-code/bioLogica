@@ -95,7 +95,6 @@
 
 .procesoProductos {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 0px 10px 0px 10px; }
@@ -119,7 +118,8 @@
 .flecha img {
   background: transparent !important;
   max-width: 150px;
-  max-height: 15px; }
+  max-height: 15px;
+  margin-top: 50px; }
 
 .encabezadoContactanos {
   padding: 30px; }
@@ -184,13 +184,15 @@
 
 @media only screen and (max-width: 767px) {
   .procesoProductos {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .flecha {
     display: flex;
     align-items: center;
     height: 150px; }
     .flecha img {
-      transform: rotate(90deg); } }
+      transform: rotate(90deg);
+      margin-top: 0%; } }
 
 .containerProductos {
   width: 100%;
@@ -219,9 +221,11 @@
   .estiloCards :hover {
     color: #9b81b9;
     text-decoration: none; }
-  .estiloCards div p {
-    text-align: center;
-    margin-top: 20px; }
+  .estiloCards div {
+    text-align: center; }
+    .estiloCards div p:first-child {
+      margin-top: 25px;
+      margin-bottom: 0%; }
   .estiloCards div img {
     background-color: transparent;
     border: none; }
